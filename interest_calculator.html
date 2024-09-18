@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interest Calculator</title>
+    <style>
+      body {
+        margin: 20px;
+        font-size: larger;
+        font-family: "Times New Roman";
+      }
+      table {
+        margin-bottom: 10px;
+      }
+      p {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td>Số tiền ban đầu:</td>
+        <td><input type="number" id="first_amount" />triệu VND</td>
+      </tr>
+      <tr>
+        <td>Số tháng cho vay:</td>
+        <td><input type="number" id="num_months" />tháng</td>
+      </tr>
+      <tr>
+        <td>Lãi suất hàng tháng:</td>
+        <td><input type="number" id="month_rate" />%</td>
+      </tr>
+    </table>
+    <button type="button" onclick="calculate()" style="font-size: large">
+      Tính lãi
+    </button>
+    <p id="interest" style="font-style: italic">Số tiền lãi hiển thị ở đây</p>
+
+    <script src="interest_calculate.js"></script>
+  </body>
+</html>
